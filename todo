@@ -1,0 +1,9 @@
+1. Add Plane & Lamp origami
+2. Ajouter au résumé des projets le Kaggle
+
+Coder sur Git :
+1. git clone https://github.com/Totom38/Totom38.github.io
+2. Faire des modifications
+3. git add .
+4. git commit -m "Description de la modification"
+5. git push origin main
