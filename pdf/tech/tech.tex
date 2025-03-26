@@ -26,6 +26,24 @@
 \tableofcontents
 \newpage
 
+\section{House pricing prediction}
+\subsection*{Python}
+\begin{itemize}
+    \item Data cleaning and preprocessing on categorical and numerical variables
+    \item Creation of new features (e.g., \texttt{TotalArea}, \texttt{TotalBaths}, binary flags for fireplaces, pools, etc.)
+    \item Handling of missing values using neighborhood-specific imputation or default values
+    \item Box-Cox transformation and RobustScaler used to normalize skewed distributions
+    \item Feature selection based on correlation matrix and XGBoost feature importance
+    \item Training of several regression models: Ridge, Lasso, SVR, Gradient Boosting, XGBoost, and LightGBM
+    \item Hyperparameter tuning using GridSearchCV and RandomizedSearchCV
+    \item Implementation of model stacking with Ridge as the meta-model to combine base model predictions
+    \item Final evaluation using RMSLE on Kaggle with a top 0.8\% leaderboard ranking
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/5.png}
+\end{figure}
+
 \section{Personal Website Development }
 \subsection*{HTML, CSS, Javascript}
 \begin{itemize}
