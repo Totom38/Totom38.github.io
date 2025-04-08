@@ -1,0 +1,17 @@
+---
+links:
+  - title: Paris Semi Marathon 2026
+    desc: 21km - upcoming
+    logo: "/static/img/race/paris2.jpg"
+  - title: Lyon Marathon 2025
+    logo: "/static/img/race/lyon.jpg"
+    desc: 42km - upcoming
+  - title: Paris Marathon 2025
+    logo: "/static/img/race/paris.webp"
+    desc: 42km - upcoming
+  - title: Gresivaudan Trail 2025
+    logo: "/static/img/race/gresivaudan.png"
+    desc: 32km (1600m D+) - 3h41
+  - title: Florence Marathon 2024
+    desc: 42km - 3h30
+    logo: "/static/img/race/florence.jpg"

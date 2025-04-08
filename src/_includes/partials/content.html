@@ -1,0 +1,17 @@
+<div class="w-full flex justify-center">
+    <div class="w-full max-w-4xl grid grid-cols-1 lg:grid-cols-2 gap-4 my-8 px-4">
+      {% if quicklinks.links %}
+        {% for item in quicklinks.links %}
+          <a class="p-5 border rounded border-gray-200 hover:border-purple-400 flex gap-4 items-start min-h-[120px]">
+            {% if item.logo %}
+              <img src="{{ item.logo }}" alt="{{ item.title }} logo" class="w-10 h-10 object-contain flex-shrink-0 mt-1" />
+            {% endif %}
+            <div>
+              <h3 class="font-semibold text-lg text-gray-700">{{ item.title }}</h3>
+              <p class="text-sm text-gray-500">{{ item.desc }}</p>
+            </div>
+          </a>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>

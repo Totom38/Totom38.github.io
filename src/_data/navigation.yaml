@@ -1,0 +1,10 @@
+---
+items:
+  - text: About
+    url: "/"
+  - text: Finance
+    url: "/finance"
+  - text: Tech
+    url: "/tech"
+  - text: Origami
+    url: "/origami"
