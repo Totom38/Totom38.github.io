@@ -153,8 +153,14 @@
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
+      letter-spacing: -1px;
+      text-align: center;
+      word-break: break-word;
     }
+  
+    .nowrap {
+      white-space: normal;}
 
     .job h3 {
       flex-direction: column;
@@ -163,8 +169,10 @@
     }
 
     header {
-      justify-content: center;
-      gap: 1rem;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
     }
   }
 
@@ -217,9 +225,6 @@
     .race-container {
       grid-template-columns: 1fr;
     }
-  }
-  .nowrap {
-    white-space: nowrap;
   }
 
   @media (max-width: 800px) {
