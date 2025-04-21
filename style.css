@@ -52,8 +52,9 @@
   }
 
   h1 {
+    /* Supprimer font-size fixe */
+    /* font-size: 5rem; */
     letter-spacing: -4px;
-    font-size: 5rem;
     margin-top: 1.5rem;
     text-align: center;
     font-weight: normal;
@@ -289,4 +290,11 @@
     color: var(--text-light);
     margin-bottom: 1.5rem;
     margin-top: -0.5rem;
+  }
+
+  h1 .nowrap {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: clamp(1.5rem, 8vw, 5rem); /* Adaptatif */
+    line-height: 1.1;
   }
