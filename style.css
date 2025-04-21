@@ -1,0 +1,289 @@
+:root {
+    --highlight: #6366f1;
+    --text-dark: #000000;
+    --text-light: #6b7280;
+    --text-mid: #374151;
+  }
+
+  body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: #fff;
+  }
+
+  #main-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--highlight);
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  nav a {
+    margin-left: 1.75rem;
+    position: relative;
+    display: inline-block;
+    background: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: var(--text-light);
+    transition: all 0.2s ease-in-out;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  nav a:hover {
+    color: var(--highlight);
+  }
+
+  h1 {
+    letter-spacing: -4px;
+    font-size: 5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  h1 .gradient-text {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #3b82f6, #9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .subtitle {
+    color: var(--text-light);
+    margin-bottom: -0.75rem;
+  }
+
+  #content-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    letter-spacing: -2px;
+  }
+
+  .job img {
+    height: 35px;
+    vertical-align: middle;
+    margin-right: 0.75rem;
+  }
+
+  .job h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: -0.5rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+  }
+
+  .skill img {
+    height: 40px;
+    transition: transform 0.2s;
+  }
+
+  .skill img:hover {
+    transform: scale(1.1);
+  }
+
+  .skill span {
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    margin-top: 0.5rem;
+  }
+
+  a {
+    color: var(--text-mid);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  a:hover {
+    color: var(--highlight);
+  }
+
+  @media (max-width: 600px) {
+    nav a {
+      margin-left: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .job h3 {
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: normal;
+    }
+
+    header {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+
+  .justify {
+    text-align: justify;
+    color: var(--text-mid);
+  }
+
+  .mid {
+    color: var(--text-mid);
+  }
+
+  .race-card {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    background-color: #fff;
+    transition: transform 0.2s ease;
+    width: 254px;
+    transition: border-color 0.2s ease;
+  }
+
+  .race-card:hover {
+    border-color: var(--highlight);
+  }
+
+  .race-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+
+  .race-text {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .race-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 1.5rem;
+  }
+  @media (max-width: 700px) {
+    .race-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 3rem;
+      letter-spacing: -2px;
+    }
+  }
+
+  .footer-icon {
+    display: inline-block;
+    transition: transform 0.2s ease;
+    margin: 0 0.25rem;
+  }
+
+  .footer-icon img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-icon:hover {
+    transform: scale(1.1);
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: #f9fafb;
+    color: var(--text-mid);
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.4rem 0.6rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position au-dessus */
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .article-title {
+    font-size: 2.25rem;
+    letter-spacing: -2px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .origami-entry .meta {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    margin-top: -0.5rem;
+  }

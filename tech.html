@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tom GILGENKRANTZ</title>
+  <link rel="icon" type="image/png" href="images/icones/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .origami-entry img {
+      max-width: 55%;
+      width: auto;
+      height: auto;
+      border-radius:8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      display: inline-block;}
+  </style>
+</head>
+<body>
+  <div id="main-wrapper">
+    <header>
+      <a href="index.html">Portfolio</a>
+      <nav>
+        <a href="finance.html">Finance</a>
+        <a href="tech.html">Tech</a>
+        <a href="origami.html">Origami</a>
+      </nav>
+    </header>
+    <div id="content-wrapper">
+      <h1>
+        <span class="nowrap">
+          <span style="font-weight: normal;">Tech</span>
+          <span class="gradient-text">Projects</span>
+        </span>
+      </h1>
+
+      <div class="origami-entry">
+        <h2 class="article-title">House pricing prediction</h2>
+        <div class="meta">13 Mar 2025 by Tom Gilgenkrantz</div>
+        <div style="text-align: center;"><img src="images/tech/5.png"></div>
+        <ul style="color: var(--text-mid);">
+          <li>Data cleaning and preprocessing on categorical and numerical variables</li>
+          <li>Creation of new features (e.g., TotalArea, TotalBaths, binary flags for fireplaces, pools, etc.)</li>
+          <li>Handling of missing values using neighborhood-specific imputation or default values</li>
+          <li>Box-Cox transformation and RobustScaler used to normalize skewed distributions</li>
+          <li>Feature selection based on correlation matrix and XGBoost feature importance</li>
+          <li>Training of several regression models (Ridge, Lasso, SVR, Gradient Boosting, XGBoost, and LightGBM)</li>
+          <li>Hyperparameter tuning using GridSearchCV and RandomizedSearchCV</li>
+          <li>Implementation of model stacking with Ridge as the meta-model to combine base model predictions</li>
+          <li>Final evaluation using RMSLE on Kaggle with a top 0.8% leaderboard ranking</li>
+      </ul>
+      </div>
+
+      <div class="origami-entry">
+        <h2 class="article-title">Personal portfolio</h2>
+        <div class="meta">17 Jul 2024 by Tom Gilgenkrantz</div>
+        <div style="text-align: center;"><img src="images/tech/4.png"></div>
+        <ul style="color: var(--text-mid);">
+          <li>Designed and implemented using HTML & CSS</li>
+          <li>Responsive layout optimized for both desktop and mobile</li>
+          <li>Integration of GitHub repository links and optional project images</li>
+      </ul>
+      </div>
+
+      <div class="origami-entry">
+        <h2 class="article-title">Board game</h2>
+        <div class="meta">01 Jun 2024 by Tom Gilgenkrantz</div>
+        <div style="text-align: center;"><img src="images/tech/3.png"></div>
+        <ul style="color: var(--text-mid);">
+          <li>Implementation in C of a 2D Tetris-like game</li>
+          <li>Implementation in Python of a 3D game</li>
+          <li>Mathematical research documents on these games</li>
+          <li>Research activities on automatic game algorithms</li>
+      </ul>
+
+      <div class="origami-entry">
+        <h2 class="article-title">Contact Management Software</h2>
+        <div class="meta">25 May 2024 by Tom Gilgenkrantz</div>
+        <div style="text-align: center;"><img src="images/tech/2.png"></div>
+        <ul style="color: var(--text-mid);">
+          <li>Application to manage contacts in an object-oriented language</li>
+      </ul>
+
+      <div class="origami-entry">
+        <h2 class="article-title">Group classification using decision tree</h2>
+        <div class="meta">2 May 2024 by Tom Gilgenkrantz</div>
+        <div style="text-align: center;"><img src="images/tech/1.png"></div>
+        <ul style="color: var(--text-mid);">
+          <li>Classification algorithm for datasets using quaternary trees</li>
+          <li>Research documents on model performance and complexity</li>
+      </ul>
+
+      <div class="origami-entry">
+        <h2 class="article-title">Crowd simulation</h2>
+        <div class="meta">18 May 2023 by Tom Gilgenkrantz</div>
+        <div style="text-align: center;"><img src="images/tech/0.png"></div>
+        <ul style="color: var(--text-mid);">
+          <li>Use of Dijkstra and adaptation of A-star to manage people's behavior</li>
+          <li>Development of a cellular automaton model</li>
+          <li>Application to my high school and proposal to improve its emergency exits</li>
+      </ul>
+    </div></div></div></div>
+</body>
+<footer style="margin-top: 4rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
+  <div style="margin-bottom: 0.75rem;">
+    <a href="https://www.linkedin.com/in/tom-gilgenkrantz" target="_blank" class="footer-icon">
+      <img src="images/icones/linkedin.png" alt="LinkedIn">
+    </a>
+    
+    <span class="footer-icon tooltip">
+      <img src="images/icones/mail.png" alt="Email">
+      <span class="tooltiptext">gilgenkrantz.tom@gmail.com</span>
+    </span>
+    
+    <span class="footer-icon tooltip">
+      <img src="images/icones/phone.png" alt="Phone">
+      <span class="tooltiptext">+33 7 82 96 18 40</span>
+    </span>
+    
+    <a href="https://www.strava.com/athletes/95217482" class="footer-icon" target="_blank">
+      <img src="images/icones/strava.png" alt="Strava">
+    </a>
+    
+  </div>
+  <p>© 2024 Tom Gilgenkrantz. All rights reserved.</p>
+</footer>
+</html>
