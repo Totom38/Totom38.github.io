@@ -25,6 +25,39 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       display: inline-block;}
   </style>
+  <style>
+    .origami-entry img {
+      max-width: 55%;
+      width: auto;
+      height: auto;
+      border-radius:8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      display: inline-block;
+      cursor: pointer; /* pour indiquer que c’est cliquable */
+      transition: transform 0.2s;
+    }
+    .origami-entry img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Lightbox */
+    #lightbox {
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    }
+  </style>
 </head>
 <body>
   <div id="main-wrapper">
@@ -97,6 +130,23 @@
       </div>
 
     </div></div></div></div>
+    <div id="lightbox"><img src="" alt="Zoomed image"></div>
+
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+
+    document.querySelectorAll(".origami-entry img").forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.style.display = "flex";
+      });
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  </script>
 </body>
 <footer style="margin-top: 4rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
   <div style="margin-bottom: 0.75rem;">
