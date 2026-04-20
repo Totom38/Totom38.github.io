@@ -1044,6 +1044,121 @@
             .mosaic-item:nth-child(14) { grid-column: 2; grid-row: 7; }
         }
 
+        /* --- Collaboration Steps Section --- */
+        .collab {
+            background-color: var(--surface-color);
+            padding: 8rem 0;
+        }
+
+        .collab-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .collab-header h2 {
+            font-size: 3.5rem;
+        }
+
+        .collab-header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-top: 1rem;
+            font-weight: 300;
+        }
+
+        .collab-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .collab-steps::before {
+            content: '';
+            position: absolute;
+            top: 3.5rem;
+            left: calc(16.66% + 1rem);
+            right: calc(16.66% + 1rem);
+            height: 1px;
+            background: linear-gradient(90deg, var(--accent-color), rgba(181, 122, 138, 0.3), var(--accent-color));
+            z-index: 0;
+        }
+
+        .collab-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2.5rem 2rem;
+            border-radius: 24px;
+            background-color: var(--bg-color);
+            border: 1px solid rgba(181, 122, 138, 0.12);
+            position: relative;
+            z-index: 1;
+            transition: var(--transition);
+        }
+
+        .collab-step:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(181, 122, 138, 0.1);
+            border-color: rgba(181, 122, 138, 0.3);
+        }
+
+        .collab-step-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(181, 122, 138, 0.15), rgba(181, 122, 138, 0.05));
+            border: 1.5px solid rgba(181, 122, 138, 0.35);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .collab-step:hover .collab-step-icon {
+            background: var(--accent-color);
+            color: #fff;
+            border-color: var(--accent-color);
+        }
+
+        .collab-step-number {
+            font-family: var(--font-main);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-color);
+            margin-bottom: 0.6rem;
+        }
+
+        .collab-step h4 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--primary-dark);
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+
+        .collab-step p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .collab-steps { grid-template-columns: 1fr; gap: 1.5rem; }
+            .collab-steps::before { display: none; }
+            .collab-header h2 { font-size: 2.5rem; }
+        }
+
         /* --- VIDEO MODAL --- */
         .video-modal {
             display: none;
@@ -1644,6 +1759,46 @@
                 <div class="mosaic-item"><img src="Emilie/Vacances/13.png" alt="Gallery"></div>
                 <!-- Landscape col 4 bas -->
                 <div class="mosaic-item"><img src="Emilie/Vacances/14.png" alt="Gallery"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLLABORATION STEPS SECTION -->
+    <section class="collab">
+        <div class="container">
+            <div class="collab-header">
+                <h2>How We Work Together</h2>
+                <p>A simple and transparent process, from first contact to final delivery</p>
+            </div>
+            <div class="collab-steps">
+
+                <div class="collab-step">
+                    <div class="collab-step-icon">
+                        <i class="fa-regular fa-handshake"></i>
+                    </div>
+                    <div class="collab-step-number">Step 1</div>
+                    <h4>First Contact &amp; Personalised Proposal</h4>
+                    <p>We discuss your needs, brand universe and goals. I then craft a tailored content concept designed for your target audience and platform.</p>
+                </div>
+
+                <div class="collab-step">
+                    <div class="collab-step-icon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <div class="collab-step-number">Step 2</div>
+                    <h4>Stay / Product Experience &amp; Content Creation</h4>
+                    <p>I live the experience authentically — stay, product testing, full immersion — and create video and photo content that genuinely reflects your brand universe.</p>
+                </div>
+
+                <div class="collab-step">
+                    <div class="collab-step-icon">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="collab-step-number">Step 3</div>
+                    <h4>Delivery &amp; Distribution</h4>
+                    <p>You receive the final edited files, ready to publish. I also share the content across my channels to maximise your brand's reach.</p>
+                </div>
+
             </div>
         </div>
     </section>
