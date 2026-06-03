@@ -278,6 +278,21 @@
     opacity: 1;
   }
 
+  .btn-redirect {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border: 2px solid var(--highlight);
+    border-radius: 8px;
+    color: var(--highlight);
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .btn-redirect:hover {
+    background-color: var(--highlight);
+    color: #fff;
+  }
+
   .article-title {
     font-size: 2.25rem;
     letter-spacing: -2px;
