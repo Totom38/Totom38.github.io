@@ -1,0 +1,9 @@
+Date;Title;Description;Photo1;Photo2;Photo3
+2025-09-01;Internship Scraper;Automated scraping of JobTeaser postings with finance-focused filtering and Discord webhook integration;images/tech/7.png;;
+2025-08-21;Automated grade notifier;Detection of new grades via HTML snapshots and real-time Discord alerts via webhooks;images/tech/6.png;;
+2025-03-13;House pricing prediction;Data cleaning, feature engineering and model stacking (XGBoost, LightGBM) with top Kaggle ranking;images/tech/5.png;;
+2024-07-17;Personal portfolio;Responsive personal website built with HTML & CSS, showcasing projects and GitHub links;images/tech/4.png;;
+2024-06-01;Board game;2D C implementation and 3D Python implementation of board games;images/tech/3.png;;
+2024-05-25;Contact management software;Object-oriented application to manage contacts with CRUD functionalities;images/tech/2.png;;
+2024-05-02;Group classification using decision tree;Quaternary-tree based classification algorithm and research on model performance;images/tech/1.png;;
+2023-05-18;Crowd simulation;Cellular automaton model using Dijkstra/A* adaptations for crowd dynamics and evacuation improvements;images/tech/0.png;;

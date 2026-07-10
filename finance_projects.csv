@@ -1,0 +1,9 @@
+Date;Title;Description;Photo1;Photo2;Photo3
+2025-09-17;American Option & Longstaff–Schwartz;Regression-based estimation of continuation values, early-exercise detection and American option pricing;images/finance/7.png;;
+2025-09-05;Option Pricing Dashboard;Interactive Plotly dashboard for Call/Put sensitivities, Greeks and dynamic KPIs;images/finance/6.png;;
+2025-08-26;Convertible Bond Pricer;Black–Scholes based convertible bond pricer with sensitivity analysis and Monte Carlo risk distribution;images/finance/5.png;;
+2025-07-23;Millennium Market Making Challenge;Automated market maker implementation, quoting engine, backtests vs benchmark and live PnL;images/finance/4.png;;
+2025-05-18;Markowitz Portfolio Optimization;Mean–variance optimization, efficient frontier construction and Monte Carlo estimation from historical data;images/finance/3.png;;
+2025-02-11;SPX & VIX joint smile calibration;Joint calibration using stochastic volatility model, forward variance extraction and Monte Carlo pricing;images/finance/2.png;;
+2024-12-21;Stocks time series analysis;AR(1) modeling with structural break detection, residual analysis and economic interpretation;images/finance/1.png;;
+2024-07-17;Stock portfolio tracking software;Yfinance integration, CSV-based position storage and Tkinter GUI for portfolio summary;images/finance/0.png;;

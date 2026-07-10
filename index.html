@@ -14,158 +14,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tom GILGENKRANTZ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="images/icones/favicon.png">
 </head>
 <body>
 
-  <div id="main-wrapper">
-    <header>
-      <a href="index.html">Portfolio</a>
-      <nav>
-        <a href="finance.html">Finance</a>
-        <a href="tech.html">Tech</a>
-        <a href="origami.html">Origami</a>
-      </nav>
-    </header>
-    <h1>
-      <span class="nowrap">
-        <span style="font-weight: normal;">Tom </span><wbr>
-        <span class="gradient-text">GILGENKRANTZ</span>
-      </span>
-    </h1>
-    <p class="justify">
-      French engineering student specializing in quantitative finance and applied mathematics. Particularly interested in market finance (trading/algo-trading & quantitative analysis). Teacher from middle school to higher education in mathematics, physics and computer science. Practicing origami & sports (snowboard, surf, tennis & running).
-    </p>
-  </div>
+  <nav class="site-nav">
+    <div class="nav-container">
+      <span class="brand">Portfolio</span>
+      <ul id="navMenu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="origami.html">Origami</a></li>
+        <li><a href="https://tomgilgenkrantz.github.io" target="_blank" rel="noopener">Sports</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
 
-  <div id="content-wrapper">
-    <section>
+  <section class="hero" style="min-height:40vh;">
+    <div class="hero-content">
+      <h1><span style="font-weight:300;">Tom</span> <span class="accent">Gilgenkrantz</span></h1>
+      <p class="subtitle">French engineering student specializing in quantitative finance and applied mathematics</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="experience">
+    <div class="section-header fade-in">
       <h2>Work Experiences</h2>
+    </div>
 
-      <div class="job">
-        <h3><img src="images/entreprises/cacib.jpg" alt="Natixis Logo"/>CACIB – Private Debt Solutions Structurer</h3>
-        <p class="subtitle">Mar 2026 - Sept 2026 · Paris, France</p>
-        <ul class="mid">
-          <li>Current Internship</li>
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="tl-date">Mar 2026 - Sept 2026 · Paris, France</div>
+        <div class="tl-title"><img src="images/entreprises/cacib.jpg" alt="CACIB Logo">CACIB – Private Debt Solutions Structurer</div>
+        <ul>
+          <li>Improvement of an internal Monte Carlo credit portfolio model for loss distribution simulation and pricing
+of Significant Risk Transfer (SRT) transactions</li>
         </ul>
       </div>
 
-      <div class="job">
-        <h3><img src="images/entreprises/natixis.png" alt="Natixis Logo"/>Natixis CIB – Alternative Credit Structurer</h3>
-        <p class="subtitle">Nov 2025 - Mar 2026 · Paris, France</p>
-        <ul class="mid">
+      <div class="timeline-item">
+        <div class="tl-date">Nov 2025 - Mar 2026 · Paris, France</div>
+        <div class="tl-title"><img src="images/entreprises/natixis.png" alt="Natixis Logo">Natixis CIB – Alternative Credit Structurer</div>
+        <ul>
           <li>Building a pricer for synthetic risk transfer transactions (SRT) with OpenPyXL</li>
-          <li>Preparation of pitchbooks and marketing materials for illiquid credit solutions</li>
           <li>Work in collaboration with credit traders for CLN pricing and structuring</li>
         </ul>
       </div>
 
-      <div class="job">
-        <h3><img src="images/entreprises/amundi.png" alt="Amundi Logo"/>Amundi – Quantitative market & liquidity risk analyst</h3>
-        <p class="subtitle">May 2025 - Nov 2025 · Paris, France</p>
-        <ul class="mid">
+      <div class="timeline-item">
+        <div class="tl-date">May 2025 - Nov 2025 · Paris, France</div>
+        <div class="tl-title"><img src="images/entreprises/amundi.png" alt="Amundi Logo">Amundi – Quantitative market & liquidity risk analyst</div>
+        <ul>
           <li>Performing stress-testing of key risk metrics under both historical crisis scenarios (Covid, 2008, ...) and theoretical shocks (volatility spikes, yield curve shifts, ...)</li>
           <li>Pricing convertible bonds and calibration of their liquidity costs</li>
-          <li>Conducting backtesting procedures to assess the reliability and stability of VaR models</li>
         </ul>
       </div>
 
-      <div class="job">
-        <h3><img src="images/entreprises/bnp.png" alt="BNP Logo"/>BNP Paribas CIB – Dispersion Trader</h3>
-        <p class="subtitle">June 2024 - August 2024 · Paris, France</p>
-        <ul class="mid">
+      <div class="timeline-item">
+        <div class="tl-date">June 2024 - August 2024 · Paris, France</div>
+        <div class="tl-title"><img src="images/entreprises/bnp.png" alt="BNP Logo">BNP Paribas CIB – Dispersion Trader</div>
+        <ul>
           <li>Portfolio of dispersions optimization using Markowitz with visualization tools for ∆, Γ, θ and ν</li>
           <li>Volatility and skew arbitrage research during French legislative elections</li>
-          <li>Pyxll/Xlwings tool development, bot automation programs</li>
-          <li>TRS cashflow management</li>
         </ul>
       </div>
 
-      <div class="job">
-        <h3><img src="images/entreprises/sherpas.png" alt="Les Sherpas Logo"/>Les Sherpas – Mathematics / physics / CS teacher</h3>
-        <p class="subtitle">Sept 2023 – Now · Paris, France</p>
-        <ul class="mid">
-          <li>Teaching mathematics, computer science and physics to more than 45 students from middle school to higher education, rated 4.99 stars on more than 75 reviews</li>
+      <div class="timeline-item">
+        <div class="tl-date">Sept 2023 – Now · Paris, France</div>
+        <div class="tl-title"><img src="images/entreprises/sherpas.png" alt="Les Sherpas Logo">Les Sherpas – Mathematics / physics / CS teacher</div>
+        <ul>
+          <li>40 students, 4.99 stars rating (80 reviews)</li>
           <li><a href="https://sherpas.com/t/etudiant-en-ecole-dingenieur-donne-cours-de-mathematiques-et-dinformatique-en-ligne-et-sur-evry" target="_blank">See my profile ↗</a></li>
         </ul>
       </div>
-    </section>
-
-    <section>
-      <h2>Programming Languages</h2>
-      <div class="skills">
-        <div class="skill"><img src="images/skills/python.png" alt="Python"/><span>Python</span></div>
-        <div class="skill"><img src="images/skills/c.png" alt="C"/><span>C</span></div>
-        <div class="skill"><img src="images/skills/sql.png" alt="SQL"/><span>SQL</span></div>
-        <div class="skill"><img src="images/skills/ocaml.png" alt="OCaml"/><span>OCaml</span></div>
-        <div class="skill"><img src="images/skills/js.png" alt="JavaScript"/><span>JavaScript</span></div>
-        <div class="skill"><img src="images/skills/html.png" alt="HTML"/><span>HTML</span></div>
-        <div class="skill"><img src="images/skills/css.png" alt="CSS"/><span>CSS</span></div>
-        <div class="skill"><img src="images/skills/vba.png" alt="VBA"/><span>VBA</span></div>
-        <div class="skill"><img src="images/skills/latex.png" alt="LaTeX"/><span>LaTeX</span></div>
-        <div class="skill"><img src="images/skills/matlab.png" alt="Matlab"/><span>Matlab</span></div>
-      </div>
-    </section>
-    <section>
-      <h2>Python Libraries</h2>
-      <div class="skills">
-        <div class="skill"><img src="images/skills/selenium.png" alt="Selenium"/><span>Selenium</span></div>
-        <div class="skill"><img src="images/skills/pandas.png" alt="Pandas"/><span>Pandas</span></div>
-        <div class="skill"><img src="images/skills/numpy.png" alt="Numpy"/><span>Numpy</span></div>
-        <div class="skill"><img src="images/skills/yfinance.png" alt="Yfinance"/><span>Yfinance</span></div>
-        <div class="skill"><img src="images/skills/pyxll.png" alt="Pyxll"/><span>Pyxll</span></div>
-        <div class="skill"><img src="images/skills/xlwings.png" alt="Xlwings"/><span>Xlwings</span></div>
-        <div class="skill"><img src="images/skills/quantlib.png" alt="Quantlib"/><span>Quantlib</span></div>
-        <div class="skill"><img src="images/skills/plotly.png" alt="Plotly"/><span>Plotly</span></div>
-        <div class="skill"><img src="images/skills/scikit.png" alt="Scikit"/><span>Scikit</span></div>
-        <div class="skill"><img src="images/skills/statsmodels.png" alt="Statsmodels"/><span>Statsmodels</span></div>
-        <div class="skill"><img src="images/skills/xgb.png" alt="XGBoost"/><span>XGBoost</span></div>
-        <div class="skill"><img src="images/skills/matplotlib.png" alt="Matplotlib"/><span>Matplotlib</span></div>
-      </div>
-    </section>
-    <section>
-      <h2>Softwares</h2>
-      <div class="skills">
-        <div class="skill"><img src="images/skills/github.png" alt="GitHub"/><span>GitHub</span></div>
-        <div class="skill"><img src="images/skills/excel.png" alt="Excel"/><span>Excel</span></div>
-        <div class="skill"><img src="images/skills/powerpoint.png" alt="Powerpoint"/><span>Powerpoint</span></div>
-        <div class="skill"><img src="images/skills/word.png" alt="Word"/><span>Word</span></div>
-        <div class="skill"><img src="images/skills/bloomberg.png" alt="Bloomberg"/><span>Bloomberg</span></div>
-      </div>
-    </section>
-
-  <section>
-    <h2>Sports</h2>
-    <div style="text-align: center; margin-top: 1rem;">
-      <a href="https://tomgilgenkrantz.github.io" target="_blank" class="btn-redirect">tomgilgenkrantz.github.io ↗</a>
     </div>
   </section>
-</div>
-</body>
-<footer style="margin-top: 4rem; text-align: center; color: var(--text-light); font-size: 0.9rem;">
-  <div style="margin-bottom: 0.75rem;">
-    <a href="https://www.linkedin.com/in/tom-gilgenkrantz" target="_blank" class="footer-icon">
-      <img src="images/icones/linkedin.png" alt="LinkedIn">
-    </a>
-    
-    <span class="footer-icon tooltip">
-      <img src="images/icones/mail.png" alt="Email">
-      <span class="tooltiptext">gilgenkrantz.tom@gmail.com</span>
-    </span>
-    
-    <span class="footer-icon tooltip">
-      <img src="images/icones/phone.png" alt="Phone">
-      <span class="tooltiptext">+33 7 82 96 18 40</span>
-    </span>
-    
-    <a href="https://www.strava.com/athletes/95217482" class="footer-icon" target="_blank">
-      <img src="images/icones/strava.png" alt="Strava">
-    </a>
-    
-  </div>
-  <p>© 2024 Tom Gilgenkrantz. All rights reserved.</p>
-</footer>
-</html>
 
-<!-- Problème de logo sur les écrans paas larges (bigo)-->
+  <div class="divider"></div>
+
+  <!-- Replaced Skills with Finance & Tech project sections -->
+
+  <section id="finance-projects">
+    <div class="section-header fade-in">
+      <h2>Finance Projects</h2>
+      <p class="subtitle">Quantitative finance projects</p>
+    </div>
+    <div class="fade-in" id="financeContent">
+      <div class="empty-state"><p>Chargement...</p></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="tech-projects">
+    <div class="section-header fade-in">
+      <h2>Tech Projects</h2>
+      <p class="subtitle">Technical and development projects</p>
+    </div>
+    <div class="fade-in" id="techContent">
+      <div class="empty-state"><p>Chargement...</p></div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-contact">
+      <p>Me contacter</p>
+      <a href="mailto:gilgenkrantz.tom@gmail.com">gilgenkrantz.tom@gmail.com</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/tom-gilgenkrantz" target="_blank" class="footer-icon" aria-label="LinkedIn">
+        <img src="images/icones/linkedin.png" alt="LinkedIn">
+      </a>
+      <span class="footer-icon tooltip">
+        <img src="images/icones/phone.png" alt="Phone">
+        <span class="tooltiptext">+33 7 82 96 18 40</span>
+      </span>
+      <a href="https://www.strava.com/athletes/95217482" target="_blank" class="footer-icon" aria-label="Strava">
+        <img src="images/icones/strava.png" alt="Strava">
+      </a>
+    </div>
+    <p class="footer-copy">© 2026 Tom Gilgenkrantz — Tous droits réservés</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightboxImg" src="" alt="Photo">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
