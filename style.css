@@ -121,10 +121,12 @@ nav.site-nav ul li a.active {
 .hero {
   min-height: 70vh;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 8rem 2rem 4rem;
+  /* top padding includes the height of the fixed nav bar (~4rem) so the
+     visible gap below the nav matches the gap above the divider */
+  padding: 10rem 2rem 6rem;
 }
 
 .hero-content h1 {
@@ -157,12 +159,13 @@ nav.site-nav ul li a.active {
   max-width: 640px;
   margin: 1.5rem auto 0;
   text-align: center;
+  /* reserves 2 lines' worth of height so the title sits at the same
+     vertical position whether or not a page has subtitle text */
+  min-height: 3.4rem;
 }
 
 .hero-content .subtitle.empty {
   visibility: hidden;
-  height: 1rem;
-  margin-top: 1.5rem;
 }
 
 /* ===================== LAYOUT ===================== */
